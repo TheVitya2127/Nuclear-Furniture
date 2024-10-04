@@ -16,11 +16,11 @@ public class ModBlocks {
         brick_concrete_legacy = new BlockGeneric(Material.rock).setBlockName("brick_concrete_legacy")
             .setHardness(15.0F)
             .setResistance(160.0F)
-            .setBlockTextureName(NuclearFurniture.MODID + ":brick_concrete_legacy");
+            .setBlockTextureName(NuclearFurniture.MODID + ":brick_concrete_legacy")
+            .setCreativeTab(NuclearFurniture.blocksTab);
     }
 
     public static void register() {
-        NuclearFurniture.LOG.info(brick_concrete_legacy.getUnlocalizedName());
         GameRegistry.registerBlock(brick_concrete_legacy, brick_concrete_legacy.getUnlocalizedName());
     }
 }

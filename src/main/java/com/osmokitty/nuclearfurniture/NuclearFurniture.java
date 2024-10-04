@@ -1,8 +1,10 @@
 package com.osmokitty.nuclearfurniture;
 
+import net.minecraft.creativetab.CreativeTabs;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
+import com.osmokitty.nuclearfurniture.creativetabs.BlocksTab;
 import com.osmokitty.nuclearfurniture.main.CommonProxy;
 
 import cpw.mods.fml.common.Mod;
@@ -36,6 +38,7 @@ public class NuclearFurniture {
     public void preInit(FMLPreInitializationEvent event) {
         proxy.preInit(event);
     }
+    public static CreativeTabs blocksTab = new BlocksTab(CreativeTabs.getNextID(), "tabBlocks");
 
     @Mod.EventHandler
     // load "Do your mod setup. Build whatever data structures you care about. Register recipes." (Remove if not needed)
