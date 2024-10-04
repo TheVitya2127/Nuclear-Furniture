@@ -19,7 +19,7 @@ public class CommonProxy {
         NuclearFurniture.LOG.info(Config.greeting);
         NuclearFurniture.LOG.info("I am NuclearFurniture at version " + Tags.VERSION);
 
-        ModBlock.init();
+        ModBlocks.init();
         ModBlocks.register();
     }
 
