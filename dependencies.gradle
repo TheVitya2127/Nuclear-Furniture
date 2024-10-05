@@ -37,4 +37,6 @@ dependencies {
     compileOnly("com.github.GTNewHorizons:NotEnoughItems:2.6.36-GTNH:dev")
     compileOnly("com.github.GTNewHorizons:CodeChickenCore:1.3.7:dev")
     implementation("com.github.HbmMods:Hbm-s-Nuclear-Tech-GIT:3a81e79554")
+    // Since compatibility with open computers will not be available soon, I commented on this
+    //implementation("li.cil.oc:OpenComputers:MC1.7.10-1.5.+:api")
 }

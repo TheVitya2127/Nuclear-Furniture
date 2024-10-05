@@ -1,9 +1,10 @@
 package com.osmokitty.nuclearfurniture.creativetabs;
 
-import com.osmokitty.nuclearfurniture.blocks.ModBlocks;
 import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.init.Items;
 import net.minecraft.item.Item;
+
+import com.osmokitty.nuclearfurniture.blocks.ModBlocks;
 
 public class BlocksTab extends CreativeTabs {
 
@@ -14,7 +15,7 @@ public class BlocksTab extends CreativeTabs {
     @Override
     public Item getTabIconItem() {
 
-        if(ModBlocks.brick_concrete_legacy != null) return Item.getItemFromBlock(ModBlocks.brick_concrete_legacy);
+        if (ModBlocks.brick_concrete_legacy != null) return Item.getItemFromBlock(ModBlocks.brick_concrete_legacy);
         return Items.iron_pickaxe;
     }
 

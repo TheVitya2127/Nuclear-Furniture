@@ -5,9 +5,10 @@ repositories {
         name = 'ModMaven'
         url = 'https://modmaven.dev'
     }
-    maven {
+    // Since compatibility with open computers will not be available soon, I commented on this
+    /*maven {
         name = "OC repo"
         url = "http://maven.cil.li/"
-    }
+    }*/
     maven { url 'https://jitpack.io' }
 }
