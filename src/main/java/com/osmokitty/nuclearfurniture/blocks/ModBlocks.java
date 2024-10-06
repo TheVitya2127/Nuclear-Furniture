@@ -21,6 +21,6 @@ public class ModBlocks {
     }
 
     public static void register() {
-        GameRegistry.registerBlock(brick_concrete_legacy, brick_concrete_legacy.getUnlocalizedName());
+        GameRegistry.registerBlock(brick_concrete_legacy, ItemBlockBlastInfo.class, brick_concrete_legacy.getUnlocalizedName());
     }
 }
