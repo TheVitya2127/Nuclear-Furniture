@@ -6,6 +6,7 @@ import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
 import com.osmokitty.nuclearfurniture.creativetabs.BlocksTab;
+import com.osmokitty.nuclearfurniture.creativetabs.FurnituresTab;
 import com.osmokitty.nuclearfurniture.main.CommonProxy;
 
 import cpw.mods.fml.common.Mod;
@@ -42,6 +43,7 @@ public class NuclearFurniture {
     }
 
     public static CreativeTabs blocksTab = new BlocksTab(CreativeTabs.getNextID(), "tabBlocksNF");
+    public static CreativeTabs furnituresTab = new FurnituresTab(CreativeTabs.getNextID(), "tabFurnituresNF");
 
     @Mod.EventHandler
     // load "Do your mod setup. Build whatever data structures you care about. Register recipes." (Remove if not needed)
