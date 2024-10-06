@@ -4,6 +4,7 @@ import net.minecraft.block.Block;
 import net.minecraft.block.material.Material;
 
 import com.hbm.blocks.generic.BlockGeneric;
+import com.hbm.items.blockItemBlockBlastInfo;
 import com.osmokitty.nuclearfurniture.NuclearFurniture;
 
 import cpw.mods.fml.common.registry.GameRegistry;
