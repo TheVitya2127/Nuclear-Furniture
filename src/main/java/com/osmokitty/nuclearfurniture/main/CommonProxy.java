@@ -4,6 +4,7 @@ import com.osmokitty.nuclearfurniture.NuclearFurniture;
 import com.osmokitty.nuclearfurniture.Tags;
 import com.osmokitty.nuclearfurniture.blocks.ModBlocks;
 
+import com.osmokitty.nuclearfurniture.recipes.CraftingManager;
 import cpw.mods.fml.common.event.FMLInitializationEvent;
 import cpw.mods.fml.common.event.FMLPostInitializationEvent;
 import cpw.mods.fml.common.event.FMLPreInitializationEvent;
@@ -27,7 +28,9 @@ public class CommonProxy {
     public void init(FMLInitializationEvent event) {}
 
     // postInit "Handle interaction with other mods, complete your setup based on this." (Remove if not needed)
-    public void postInit(FMLPostInitializationEvent event) {}
+    public void postInit(FMLPostInitializationEvent event) {
+        CraftingManager.registerRecipes();
+    }
 
     // register server commands in this event handler (Remove if not needed)
     public void serverStarting(FMLServerStartingEvent event) {}
