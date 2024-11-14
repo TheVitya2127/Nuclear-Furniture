@@ -13,7 +13,7 @@ public class ClientProxy extends CommonProxy {
     public void preInit(FMLPreInitializationEvent event) {
         super.preInit(event);
 
-        RenderingRegistry.registerBlockHandler(new RenderDecoStool());
+            RenderingRegistry.registerBlockHandler(new RenderDecoStool());
     }
 
     @Override

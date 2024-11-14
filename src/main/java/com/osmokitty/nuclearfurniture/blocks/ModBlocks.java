@@ -68,9 +68,9 @@ public class ModBlocks {
                 .setCreativeTab(NuclearFurniture.blocksTab);
 
         deco_stool = new BlockDecoStool(Material.iron).setBlockName("deco_stool")
-                .setCreativeTab(NuclearFurniture.blocksTab)
+                .setCreativeTab(NuclearFurniture.furnituresTab)
                 .setHardness(5.0F)
-                .setResistance(10.0F).setBlockTextureName(NuclearFurniture.MODID + ":deco_stool");
+                .setResistance(10.0F).setBlockTextureName(NuclearFurniture.MODID + ":shitblock");
     }
 
     public static void register() {
@@ -86,6 +86,7 @@ public class ModBlocks {
         GameRegistry.registerBlock(concrete_ferrouranium, ItemBlockBlastInfo.class, concrete_ferrouranium.getUnlocalizedName());
         GameRegistry.registerBlock(brick_ferrouranium, ItemBlockBlastInfo.class, brick_ferrouranium.getUnlocalizedName());
         GameRegistry.registerBlock(brick_ferrouranium_stairs, brick_ferrouranium_stairs.getUnlocalizedName());
+
         GameRegistry.registerBlock(deco_stool, deco_stool.getUnlocalizedName());
 
     }

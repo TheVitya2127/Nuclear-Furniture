@@ -3,8 +3,10 @@ package com.osmokitty.nuclearfurniture.main;
 import com.osmokitty.nuclearfurniture.NuclearFurniture;
 import com.osmokitty.nuclearfurniture.Tags;
 import com.osmokitty.nuclearfurniture.blocks.ModBlocks;
-
+import com.osmokitty.nuclearfurniture.hazard.RAHazardRegistry;
+import com.osmokitty.nuclearfurniture.items.ModItems;
 import com.osmokitty.nuclearfurniture.recipes.CraftingManager;
+
 import cpw.mods.fml.common.event.FMLInitializationEvent;
 import cpw.mods.fml.common.event.FMLPostInitializationEvent;
 import cpw.mods.fml.common.event.FMLPreInitializationEvent;
@@ -17,11 +19,16 @@ public class CommonProxy {
     public void preInit(FMLPreInitializationEvent event) {
         Config.synchronizeConfiguration(event.getSuggestedConfigurationFile());
 
-        NuclearFurniture.LOG.info(Config.greeting);
-        NuclearFurniture.LOG.info("I am NuclearFurniture at version " + Tags.VERSION);
-
         ModBlocks.init();
         ModBlocks.register();
+
+        ModItems.init();
+        ModItems.register();
+
+        RAHazardRegistry.register();
+
+        NuclearFurniture.LOG.info(Config.greeting);
+        NuclearFurniture.LOG.info("I am NuclearFurniture at version " + Tags.VERSION);
     }
 
     // load "Do your mod setup. Build whatever data structures you care about. Register recipes." (Remove if not needed)

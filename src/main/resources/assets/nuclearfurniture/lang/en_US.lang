@@ -1,6 +1,8 @@
 itemGroup.tabBlocksNF=NF Deco Blocks
 itemGroup.tabFurnituresNF=NF Deco Furnitures
+itemGroup.tabItemsNF=NF Items and Parts
 
+// Blocks
 tile.brick_concrete_legacy.name=Small Concrete Bricks
 tile.brick_concrete_stairs_legacy.name=Small Concrete Brick Stairs
 tile.brick_concrete_mossy_legacy.name=Mossy Small Concrete Bricks
@@ -12,3 +14,10 @@ tile.brick_arc_stairs.name=Arc Bricks Stairs
 tile.concrete_ferrouranium.name=Ferrouranium Concrete
 tile.brick_ferrouranium.name=Ferrouranium Bricks
 tile.brick_ferrouranium_stairs.name=Ferrouranium Bricks Stairs
+
+// Furnitures
+tile.deco_stool.name=Deco Stool
+
+// Items
+item.dusty_clay.name=Dusty Clay
+item.dusty_brick.name=Dusty Brick
