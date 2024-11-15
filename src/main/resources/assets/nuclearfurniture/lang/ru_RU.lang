@@ -3,6 +3,7 @@ itemGroup.tabFurnituresNF=Декоративная мебель NF
 itemGroup.tabItemsNF=Предметы и детали NF
 
 // Blocks
+tile.block_kimkimium.name=Блок кимкимиума
 tile.brick_concrete_legacy.name=Маленькие бетонные кирпичики
 tile.brick_concrete_stairs_legacy.name=Ступеньки из маленьких бетонных кирпичиков
 tile.brick_concrete_mossy_legacy.name=Замшелые маленькие бетонные кирпичики
@@ -19,5 +20,8 @@ tile.brick_ferrouranium_stairs.name=Ступеньки из ферроурано
 tile.deco_stool.name=Деко табуретка
 
 // Items
+item.ingot_kimkimium.name=Слиток кимкимиума
+item.nugget_kimkimium.name=Самородок кимкимиума
+item.plate_kimkimium.name=Пластина кимкимиума
 item.dusty_clay.name=Пыльная глина
 item.dusty_brick.name=Пыльный кирпич

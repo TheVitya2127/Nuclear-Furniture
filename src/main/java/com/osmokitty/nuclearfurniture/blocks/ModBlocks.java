@@ -14,6 +14,8 @@ import cpw.mods.fml.common.registry.GameRegistry;
 
 public class ModBlocks {
 
+    public static Block block_kimkimium;
+
     public static Block brick_concrete_legacy;
     public static Block brick_concrete_stairs_legacy;
     public static Block brick_concrete_mossy_legacy;
@@ -30,6 +32,11 @@ public class ModBlocks {
     public static Block deco_stool;
 
     public static void init() {
+        block_kimkimium = new BlockGeneric(Material.rock).setBlockName("block_kimkimium")
+                .setCreativeTab(NuclearFurniture.blocksTab)
+                .setHardness(5.0F)
+                .setResistance(300.0F).setBlockTextureName(NuclearFurniture.MODID + ":block_kimkimium");
+
         brick_concrete_legacy = new BlockGeneric(Material.rock).setBlockName("brick_concrete_legacy")
                 .setCreativeTab(NuclearFurniture.blocksTab)
                 .setHardness(15.0F)
@@ -74,6 +81,8 @@ public class ModBlocks {
     }
 
     public static void register() {
+        GameRegistry.registerBlock(block_kimkimium, block_kimkimium.getUnlocalizedName());
+
         GameRegistry.registerBlock(brick_concrete_legacy, ItemBlockBlastInfo.class, brick_concrete_legacy.getUnlocalizedName());
         GameRegistry.registerBlock(brick_concrete_stairs_legacy, brick_concrete_stairs_legacy.getUnlocalizedName());
         GameRegistry.registerBlock(brick_concrete_mossy_legacy, ItemBlockBlastInfo.class, brick_concrete_mossy_legacy.getUnlocalizedName());
