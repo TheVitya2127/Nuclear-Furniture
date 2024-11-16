@@ -1,5 +1,6 @@
 package com.osmokitty.nuclearfurniture;
 
+import com.osmokitty.nuclearfurniture.creativetabs.ItemsTab;
 import net.minecraft.creativetab.CreativeTabs;
 
 import org.apache.logging.log4j.LogManager;
@@ -44,6 +45,7 @@ public class NuclearFurniture {
 
     public static CreativeTabs blocksTab = new BlocksTab(CreativeTabs.getNextID(), "tabBlocksNF");
     public static CreativeTabs furnituresTab = new FurnituresTab(CreativeTabs.getNextID(), "tabFurnituresNF");
+    public static CreativeTabs itemsTab = new ItemsTab(CreativeTabs.getNextID(), "tabItemsNF");
 
     @Mod.EventHandler
     // load "Do your mod setup. Build whatever data structures you care about. Register recipes." (Remove if not needed)

@@ -1,14 +1,27 @@
 itemGroup.tabBlocksNF=Декоративные блоки NF
-itemGroup.tabFurnituresNF=NF Deco Furnitures
+itemGroup.tabFurnituresNF=Декоративная мебель NF
+itemGroup.tabItemsNF=Предметы и детали NF
 
+// Blocks
+tile.block_kimkimium.name=Блок кимкимиума
 tile.brick_concrete_legacy.name=Маленькие бетонные кирпичики
 tile.brick_concrete_stairs_legacy.name=Ступеньки из маленьких бетонных кирпичиков
 tile.brick_concrete_mossy_legacy.name=Замшелые маленькие бетонные кирпичики
 tile.brick_concrete_mossy_stairs_legacy.name=Ступеньки из замшелых маленьких бетонных кирпичиков
-tile.brick_gray.name=Пыльные кирпичи
+tile.brick_gray.name=Блок пыльных кирпичей
 tile.brick_gray_stairs.name=Ступеньки из пыльных кирпичей
-tile.brick_arc.name=Дуговые кирпичи
+tile.brick_arc.name=Блок дуговых кирпичей
 tile.brick_arc_stairs.name=Ступеньки из дуговых кирпичей
 tile.concrete_ferrouranium.name=Ферроурановый бетон
 tile.brick_ferrouranium.name=Ферроурановые кирпичи
 tile.brick_ferrouranium_stairs.name=Ступеньки из ферроурановых кирпичей
+
+// Furnitures
+tile.deco_stool.name=Деко табуретка
+
+// Items
+item.ingot_kimkimium.name=Слиток кимкимиума
+item.nugget_kimkimium.name=Самородок кимкимиума
+item.plate_kimkimium.name=Пластина кимкимиума
+item.dusty_clay.name=Пыльная глина
+item.dusty_brick.name=Пыльный кирпич

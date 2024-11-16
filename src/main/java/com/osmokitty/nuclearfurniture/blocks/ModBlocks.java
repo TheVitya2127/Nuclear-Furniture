@@ -1,17 +1,20 @@
 package com.osmokitty.nuclearfurniture.blocks;
 
 import com.hbm.blocks.generic.BlockDecoCT;
-import net.minecraft.block.Block;
-import net.minecraft.block.material.Material;
-
 import com.hbm.blocks.generic.BlockGeneric;
 import com.hbm.blocks.generic.BlockGenericStairs;
 import com.hbm.items.block.ItemBlockBlastInfo;
+
+import com.osmokitty.nuclearfurniture.blocks.generic.BlockDecoStool;
 import com.osmokitty.nuclearfurniture.NuclearFurniture;
 
+import net.minecraft.block.Block;
+import net.minecraft.block.material.Material;
 import cpw.mods.fml.common.registry.GameRegistry;
 
 public class ModBlocks {
+
+    public static Block block_kimkimium;
 
     public static Block brick_concrete_legacy;
     public static Block brick_concrete_stairs_legacy;
@@ -26,7 +29,14 @@ public class ModBlocks {
     public static Block brick_ferrouranium;
     public static Block brick_ferrouranium_stairs;
 
+    public static Block deco_stool;
+
     public static void init() {
+        block_kimkimium = new BlockGeneric(Material.rock).setBlockName("block_kimkimium")
+                .setCreativeTab(NuclearFurniture.blocksTab)
+                .setHardness(5.0F)
+                .setResistance(300.0F).setBlockTextureName(NuclearFurniture.MODID + ":block_kimkimium");
+
         brick_concrete_legacy = new BlockGeneric(Material.rock).setBlockName("brick_concrete_legacy")
                 .setCreativeTab(NuclearFurniture.blocksTab)
                 .setHardness(15.0F)
@@ -64,9 +74,15 @@ public class ModBlocks {
         brick_ferrouranium_stairs = new BlockGenericStairs(brick_ferrouranium, 0).setBlockName("brick_ferrouranium_stairs")
                 .setCreativeTab(NuclearFurniture.blocksTab);
 
+        deco_stool = new BlockDecoStool(Material.iron).setBlockName("deco_stool")
+                .setCreativeTab(NuclearFurniture.furnituresTab)
+                .setHardness(5.0F)
+                .setResistance(10.0F).setBlockTextureName(NuclearFurniture.MODID + ":shitblock");
     }
 
     public static void register() {
+        GameRegistry.registerBlock(block_kimkimium, block_kimkimium.getUnlocalizedName());
+
         GameRegistry.registerBlock(brick_concrete_legacy, ItemBlockBlastInfo.class, brick_concrete_legacy.getUnlocalizedName());
         GameRegistry.registerBlock(brick_concrete_stairs_legacy, brick_concrete_stairs_legacy.getUnlocalizedName());
         GameRegistry.registerBlock(brick_concrete_mossy_legacy, ItemBlockBlastInfo.class, brick_concrete_mossy_legacy.getUnlocalizedName());
@@ -79,6 +95,8 @@ public class ModBlocks {
         GameRegistry.registerBlock(concrete_ferrouranium, ItemBlockBlastInfo.class, concrete_ferrouranium.getUnlocalizedName());
         GameRegistry.registerBlock(brick_ferrouranium, ItemBlockBlastInfo.class, brick_ferrouranium.getUnlocalizedName());
         GameRegistry.registerBlock(brick_ferrouranium_stairs, brick_ferrouranium_stairs.getUnlocalizedName());
+
+        GameRegistry.registerBlock(deco_stool, deco_stool.getUnlocalizedName());
 
     }
 }
